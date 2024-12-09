@@ -1,0 +1,140 @@
+
+.navlist{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 6%;
+    align-items: center;
+    margin: 6rem auto;
+    margin-left: 0;
+    position: fixed;
+    z-index: 998;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.navlist p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.navbar{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.hamburger {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    position: fixed; 
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .close-btn {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .close-btn:hover {
+    color: #f00;
+  }
+  
+
+  
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .navlist {
+      flex-direction: row;
+      gap: 2%;
+      padding: 0;
+      font-size: 1rem;
+      position: fixed;
+      margin-top: -1rem;
+    }
+  
+    .navlist p {
+      font-size: 1rem;
+    }
+    .navbar{
+        width: 100%;
+        margin: 0;
+    }
+  }
+  
+  /* For mobile screens */
+  @media (max-width: 480px) {
+
+    .navbar{
+        margin-top: 10rem;
+    }
+    
+    .hamburger {
+        display: flex;
+        margin-left: 1rem;
+        margin-top: -8rem;
+        width: 24px;
+        height: 20px;  
+      }
+    
+      .navlist {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        width: 50%;
+        background-color: #fff;
+        z-index: 999;
+        padding: 1rem 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    
+      .navlist.show {
+        display: flex;
+        position: fixed;
+      }
+    
+      .navlist p {
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 0.6rem;
+        border-bottom: 1px solid #ddd;
+      }
+    
+      .navlist p:last-child {
+        border-bottom: none;
+      }
+  }
+  
+
+
+  

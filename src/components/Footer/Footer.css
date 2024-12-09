@@ -1,0 +1,149 @@
+.footer-container {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  .newsletter h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .newsletter p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    color: #bbb;
+  }
+  
+  .newsletter-input {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .newsletter-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .newsletter-input button {
+    background-color: #050505;
+    color: #676767;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 2px solid #676767;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .newsletter-input button:hover {
+    background-color: #f5f5f5;
+    color: #000;
+  }
+  
+  
+  .contact, .currency {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact h3, .currency h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .contact p, .currency p {
+    font-size: 0.875rem;
+    color: #bbb;
+  }
+  
+  .currency-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .currency-info img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+  
+  .currency-note {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 0.5rem;
+  }
+  
+ 
+  .quick-links h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .quick-links nav a {
+    display: block;
+    font-size: 0.875rem;
+    color: #bbb;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .quick-links nav a:hover {
+    color: #fff;
+  }
+  
+  
+  .follow-us h3, .accepted-payments h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .social-links a {
+    font-size: 0.875rem;
+    color: #bbb;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .social-links a:hover {
+    color: #fff;
+  }
+  
+  .payment-methods {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .payment-methods img {
+    height: 30px;
+    width: 40px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+  
+
+  .footer-copyright {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+  }
+  

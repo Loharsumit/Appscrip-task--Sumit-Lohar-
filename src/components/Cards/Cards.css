@@ -1,0 +1,528 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid rgba(169, 169, 169, 0.447);
+  border-bottom: 1px solid rgba(169, 169, 169, 0.447);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 10px;
+}
+
+.toggle-filter {
+  padding: 8px 16px;
+  border-style: none;
+  background-color: #f9f9f9;
+  color: #666;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 17px;
+  text-decoration: underline;
+}
+
+.sort-select {
+  padding: 8px;
+  border-style: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  gap: 16px;
+}
+
+.filters {
+  width: 240px;
+  /* border: 1px solid #ccc; */
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.filters h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.checkbox-group {
+  margin-bottom: 16px;
+}
+
+.products {
+  flex: 1;
+}
+
+.wishlist-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 4px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.pricing-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.auth-link {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+
+.ads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.ad-card {
+  background-color: rgb(236, 235, 235);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: transform 0.3s ease;
+
+&:hover {
+  transform: translateY(-10px);
+}
+}
+
+.featured-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background-color: #dcdbd983;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.ad-image {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.ad-price {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.ad-title {
+  /* font-size: 0.875rem;
+  color: #4a5568; */
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.ad-details {
+  font-size: 0.75rem;
+  color: #07336c;
+}
+
+
+.page-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(42, 41, 41);
+  margin-top: 7rem;
+}
+
+.page-description h1{
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.page-description p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 50%;
+  text-align: center;
+}
+
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.dropdown {
+  margin-bottom: 16px;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.dropdown-header h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  padding-left: 16px;
+}
+
+.unselect {
+  font-size: 12px;
+  color: #999;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+
+.unselect:hover {
+  color: #555;
+}
+
+.checkbox-label span {
+  font-size: 14px;
+}
+
+.dropdown p {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: normal;
+  border-bottom: 1px solid #ccc;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-right: 4rem;
+}
+
+.like-button.liked i {
+  color: red;
+}
+
+.like-button.not-liked i {
+  color: gray;
+}
+
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .container {
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    margin-bottom: 10px;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+
+  .header-left {
+    font-size: 9px;
+  }
+
+  .toggle-filter {
+    font-size: 12px;
+  }
+  
+  .filters{
+    width: 150px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+
+  .page-description{
+    margin-top: 4rem;
+  }
+  
+  .page-description h1{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  
+  .page-description p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    width: 50%;
+    text-align: center;
+  }
+
+  .sort-select {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .ads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .ad-card {
+    background-color: rgb(236, 235, 235);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-10px);
+  }
+  }
+  
+  .featured-badge {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background-color: #dcdbd983;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .ad-image {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .ad-price {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .ad-title {
+    /* font-size: 0.875rem;
+    color: #4a5568; */
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .ad-details {
+    font-size: 0.75rem;
+    color: #07336c;
+  }
+
+  .like-button {
+    font-size: 16px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    font-size: 0.8rem;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .header-left h1{
+    display: none;
+  }
+  
+  .page-description h1{
+    margin-top: -5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .page-description p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: -1rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  .toggle-filter {
+    padding: 8px 16px;
+    border-style: none;
+    background-color: #f9f9f9;
+    color: #000000;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .hr{
+    height: 1rem;
+  }
+
+  .sort-select {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    width: 10rem;
+  }
+
+  .filters{
+      width: 4rem;
+      padding: 5px;
+  }
+
+  .filters h2 {
+    font-size: 0.6rem;
+    margin-bottom: 1px;
+  }
+  
+  .checkbox-label {
+    width: 0.5rem;
+    height: 0.5rem;
+    gap: 1px;
+    margin-bottom: 1px;
+  }
+  .checkbox-label span{
+    font-size: 0.5rem;
+  }
+  
+  .checkbox-group {
+    margin-bottom: 1px;
+  }
+
+  .dropdown{
+    margin:auto;
+  }
+
+  .dropdown p{
+    font-size: 0.5rem;
+    margin: 1px;
+  }
+
+  .dropdown-header span{
+    font-size: 0.5rem;
+  }
+
+  .dropdown-header{
+    margin: 1px;
+  }
+
+  .ads-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+  }
+
+  .ad-card {
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    position: relative;
+    transition: transform 0.3s ease;
+     &:hover {
+    transform: translateY(-5px);
+  }
+  }
+  
+  .featured-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #dcdbd9bc;
+    color: black;
+    font-size: 0.5rem;
+    font-weight: 700;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+  }
+  
+  .ad-image {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .ad-price {
+    margin-top: 0.5rem;
+    font-size: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .ad-title {
+    /* color: #4a5568;  */
+    margin-top: 0.5rem;
+    font-size: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .ad-details {
+    font-size: 0.5rem;
+    color: #07336c;
+  }
+
+  .like-button {
+    font-size: 1rem;
+  }
+  
+}
+
