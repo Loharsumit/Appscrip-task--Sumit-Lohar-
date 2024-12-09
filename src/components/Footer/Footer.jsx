@@ -40,13 +40,13 @@ export default function Footer() {
         <div className="quick-links">
           <h3>QUICK LINKS</h3>
           <nav>
-            <a href="/orders-shipping">Orders & Shipping</a>
-            <a href="/join">Join/Login as a Seller</a>
-            <a href="/payment">Payment & Pricing</a>
-            <a href="/returns">Return & Refunds</a>
-            <a href="/faqs">FAQs</a>
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/terms">Terms & Conditions</a>
+            <a href="#">Orders & Shipping</a>
+            <a href="#">Join/Login as a Seller</a>
+            <a href="#">Payment & Pricing</a>
+            <a href="#">Return & Refunds</a>
+            <a href="#">FAQs</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
           </nav>
         </div>
 
